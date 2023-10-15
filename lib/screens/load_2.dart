@@ -31,16 +31,10 @@ class Load_2 extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 28),
-                  AnimatedLinearProgressBar(),
+                  AnimatedLinearProgressBar2(),
                   const SizedBox(height: 28),
                   Container(
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const SizedBox(width: 8),
-                        Text(
+                        child: Text(
                           'LET\'S SET YOU UP',
                           style: TextStyle(
                             color: Color(0xFF328B8C),
@@ -50,8 +44,6 @@ class Load_2 extends StatelessWidget {
                             height: 0,
                             letterSpacing: 1.20,
                           ),
-                        ),
-                      ],
                     ),
                   ),
                 ],

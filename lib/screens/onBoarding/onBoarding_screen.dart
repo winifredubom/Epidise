@@ -5,6 +5,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:task_2/constants/image_strings.dart';
 import 'package:task_2/constants/text_strings.dart';
 import 'package:task_2/screens/login_screen/login_screen.dart';
+import 'package:task_2/screens/login_screen/main_login.dart';
 import 'package:task_2/styles/styles.dart';
 import 'package:task_2/widgets/onBoarding_circle.dart';
 
@@ -101,7 +102,7 @@ class BottomButton extends StatelessWidget {
               // Navigate to the 'next_screen' route when currentPage is 2.0
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ParallaxScroll()),
+                MaterialPageRoute(builder: (context) => MainLogin()),
               );
             } else {
               _pageController?.nextPage(
@@ -140,7 +141,8 @@ class SkipAndIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 12, 21, 0),
-      child: Row(
+      child:
+      Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
         Expanded(
